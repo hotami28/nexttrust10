@@ -3,7 +3,6 @@
 <script type="module">
 import { createHotContext } from "/@vite/client";
 const hot = createHotContext("/__dummy__runtime-error-plugin");
-
 function sendError(error) {
   if (!(error instanceof Error)) {
     error = new Error("(unknown runtime error)");
